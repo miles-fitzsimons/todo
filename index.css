@@ -1,0 +1,12 @@
+main {
+  text-align: center;
+}
+
+.item {
+	border: solid 1px blue;
+}
+
+.itemButton {
+	cursor: pointer;
+
+}
