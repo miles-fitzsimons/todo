@@ -8,5 +8,9 @@ main {
 
 .itemButton {
 	cursor: pointer;
+}
 
+#newText {
+	margin-bottom: 20px;
+	margin-right: 10px;
 }

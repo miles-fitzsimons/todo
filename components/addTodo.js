@@ -4,6 +4,7 @@ class AddTodo extends Component {
 
 	getNewTodoText() {
 		let newTodoText = document.getElementById('newText').value
+		document.getElementById('newText').value = ''
 		return newTodoText
 	}
 
@@ -24,7 +25,7 @@ class AddTodo extends Component {
 	render() {
 		return (
 			<div>
-				<textarea id="newText" /><button onClick={() => {this.props.newTodo(this.getNewTodoText(), this.getNewId())}}>OK</button>
+				<input type="text" id="newText" placeholder="add new todo" /><button onClick={() => {this.props.newTodo(this.getNewTodoText(), this.getNewId())}}>OK</button>
 			</div>
 		)
 	}
