@@ -1,10 +1,16 @@
-main {
-  text-align: center;
+body {
+	 background-color: #e8f2fc;
 }
 
-.item {
-	border: solid 1px blue;
+h1 {
+	color: #1974D1;
 }
+
+main {
+  text-align: center;
+  color: #FFFFFF;
+}
+
 
 .itemButton {
 	cursor: pointer;
@@ -13,4 +19,26 @@ main {
 #newText {
 	margin-bottom: 20px;
 	margin-right: 10px;
+}
+
+.item {
+	border: 3px solid #1974D1;
+	width: 30%;
+	margin: 3% auto;
+	height: 200px;
+	border-radius: 5%;
+	box-shadow: 10px 10px 5px #a6a6a6;
+	background-color: #1974D1;
+}
+
+#editText {
+    font-size: 30px;
+    text-align: center;
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    background-color: #1974D1;
+    border: none;
+    color: white;
 }

@@ -25,7 +25,7 @@ class AddTodo extends Component {
 	render() {
 		return (
 			<div>
-				<input type="text" id="newText" placeholder="add new todo" /><button onClick={() => {this.props.newTodo(this.getNewTodoText(), this.getNewId())}}>OK</button>
+				<input type="text" id="newText" placeholder="add new todo" /><button className="glyphicon glyphicon-ok" aria-hidden="true" aria-label="edit" onClick={() => {this.props.newTodo(this.getNewTodoText(), this.getNewId())}}></button>
 			</div>
 		)
 	}

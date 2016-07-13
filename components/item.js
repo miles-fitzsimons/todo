@@ -8,9 +8,9 @@ class Item extends Component {
 		return (
 			<div className="item">
 				<EditContainer todo={todo} displayHeading={displayHeading} completed={completed} id={id} />
-				<h3 className="itemButton" onClick={() => {this.props.done(id)}}>Done</h3>
-				<h3 className="itemButton" onClick={() => {this.props.edit(id)}}>Edit</h3>
-				<h3 className="itemButton" onClick={() => {this.props.delete(id)}}>Delete</h3>
+				<span className="itemButton glyphicon glyphicon-ok" aria-hidden="true" aria-label="done" onClick={() => {this.props.done(id)}}></span>&emsp;
+				<span className="itemButton glyphicon glyphicon-pencil" aria-hidden="true" aria-label="edit" onClick={() => {this.props.edit(id)}}></span>&emsp;
+				<span className="itemButton glyphicon glyphicon-remove" aria-hidden="true" aria-label="delete" onClick={() => {this.props.delete(id)}}></span>
 		  </div>
 		)
 	}
