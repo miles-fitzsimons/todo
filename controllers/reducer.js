@@ -37,7 +37,6 @@ const reducer = (state = INITIAL_STATE, action) => {
 				return Object.assign({}, state, {todos: editArr})
 
 			case 'update':
-				console.log('updating at reducer', action)
 				// find id, change associated todo and reset displayHeading to true
 				let updateArr = state.todos.map((todo) => {
 					return todo.id === action.id ? {id: todo.id, todo: action.todo, completed: todo.completed, displayHeading: true} : todo

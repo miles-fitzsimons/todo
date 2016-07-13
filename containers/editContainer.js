@@ -13,6 +13,12 @@ function mapDispatchToProps (dispatch) {
 				todo: todo,
 				id: id				
 			})
+		},
+		edit: (id) => {
+			dispatch({
+				type: 'edit',
+				id: id
+			})
 		}
 	}
 }
