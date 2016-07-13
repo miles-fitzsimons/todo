@@ -16,15 +16,18 @@ const reducer = (state = INITIAL_STATE, action) => {
 			return newTodoState
 
 		case 'done':
-			console.log('done', action)
-			const doneState = Object.assign({}, state)
-			// find id, set completed to true
-			console.log('1', doneState)
-			var arr = doneState.todos.map((todo) => {
+			// find id, set associated completed to true
+			let doneArr = state.todos.map((todo) => {
 				return todo.id === action.id ? {id: todo.id, todo: todo.todo, completed: !todo.completed} : todo
 			})
-			doneState.todos = arr
-			return doneState
+			return Object.assign({}, state, {todos: doneArr})
+
+		case 'delete':
+		// find id, delete associated todo object
+			let deleteArr = state.todos.filter((todo) => {
+				return todo.id !== action.id
+			})
+			return Object.assign({}, state, {todos: deleteArr})
 
 		default:
 			return state

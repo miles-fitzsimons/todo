@@ -12,6 +12,12 @@ const mapDispatchToProps = (dispatch) => {
 				type: 'done',
 				id: id
 			})
+		},
+		delete: (id) => {
+			dispatch({
+				type: 'delete',
+				id: id
+			})
 		}
 	}
 }

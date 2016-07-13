@@ -8,10 +8,17 @@ class AddTodo extends Component {
 	}
 
 	getNewId() {
-		let id = this.props.todos.reduce((p,c) => {
-			return p.id > c.id ? p : c
-		}).id + 1
-		return id
+		console.log('add', this.props.todos.length)
+		if (this.props.todos.length === 0) {
+			let id = 1
+			return id
+		}
+		else {
+			let id = this.props.todos.reduce((p,c) => {
+				return p.id > c.id ? p : c
+			}).id + 1
+			return id
+		}
 	}
 
 	render() {
