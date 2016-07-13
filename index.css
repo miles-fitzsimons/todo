@@ -42,3 +42,25 @@ main {
     border: none;
     color: white;
 }
+
+.glyphicon-plus {
+	  background: transparent;
+    border: #1974D1 solid;
+    color: #1974D1;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.important {
+	background-color: red;
+	border-color: red
+}
+
+#filter {
+	position: absolute;
+	right: 24px;
+	top: 24px;
+	font-size: 24px;
+	color: #1974D1;
+}

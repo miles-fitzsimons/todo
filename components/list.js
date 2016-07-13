@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import Item from './item'
+
 import ItemContainer from '../containers/itemContainer'
 
 class List extends Component {

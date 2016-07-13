@@ -7,6 +7,7 @@ class App extends Component {
   render () {
     return (
     	<div>
+    	<span id="filter" className="glyphicon glyphicon-filter"></span>
 		    <h1>What chu gotta do?</h1>
 		    <AddTodoContainer />
 		    <ListContainer />

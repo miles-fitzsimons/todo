@@ -24,6 +24,12 @@ const mapDispatchToProps = (dispatch) => {
 				type: 'edit',
 				id: id
 			})
+		},
+		important: (id) => {
+			dispatch({
+				type: 'important',
+				id: id
+			})
 		}
 	}
 }

@@ -9,7 +9,7 @@ class AddTodo extends Component {
 	}
 
 	getNewId() {
-		console.log('add', this.props.todos.length)
+		console.log('add', this.props.todos)
 		if (this.props.todos.length === 0) {
 			let id = 1
 			return id
@@ -25,7 +25,8 @@ class AddTodo extends Component {
 	render() {
 		return (
 			<div>
-				<input type="text" id="newText" placeholder="add new todo" /><button className="glyphicon glyphicon-ok" aria-hidden="true" aria-label="edit" onClick={() => {this.props.newTodo(this.getNewTodoText(), this.getNewId())}}></button>
+
+				<button className="glyphicon glyphicon-plus" aria-hidden="true" aria-label="edit" onClick={() => {this.props.newTodo(this.getNewId())}}></button>
 			</div>
 		)
 	}
@@ -33,3 +34,5 @@ class AddTodo extends Component {
 }
 
 export default AddTodo
+
+// <input type="text" id="newText" placeholder="add new todo" />

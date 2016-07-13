@@ -7,10 +7,9 @@ function mapStateToProps (state) {
 
 function mapDispatchToProps (dispatch) {
 	return {
-		newTodo: (todo, id) => {
+		newTodo: (id) => {
 			dispatch({
 				type: 'newTodo',
-				todo: todo,
 				id: id
 			})
 		}
