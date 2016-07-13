@@ -18,6 +18,12 @@ const mapDispatchToProps = (dispatch) => {
 				type: 'delete',
 				id: id
 			})
+		},
+		edit: (id) => {
+			dispatch({
+				type: 'edit',
+				id: id
+			})
 		}
 	}
 }

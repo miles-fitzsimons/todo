@@ -1,5 +1,5 @@
-import addTodo from '../components/addTodo'
 import { connect } from 'react-redux'
+import AddTodo from '../components/addTodo'
 
 function mapStateToProps (state) {
 	return {todos: state.todos}
@@ -17,4 +17,4 @@ function mapDispatchToProps (dispatch) {
 	}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(addTodo)
+export default connect(mapStateToProps, mapDispatchToProps)(AddTodo)
